@@ -1,0 +1,29 @@
+uuid: 7a43b5f1-1314-4a9d-8556-47e1ff496c97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grocery_name
+    - node.type.grocery
+    - taxonomy.vocabulary.grocery_type
+id: node.grocery.field_grocery_name
+field_name: field_grocery_name
+entity_type: node
+bundle: grocery
+label: Grocery-name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grocery_type: grocery_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

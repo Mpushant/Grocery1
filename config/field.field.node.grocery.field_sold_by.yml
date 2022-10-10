@@ -1,0 +1,19 @@
+uuid: f9fbcb67-e366-49cc-a368-71619758e736
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sold_by
+    - node.type.grocery
+id: node.grocery.field_sold_by
+field_name: field_sold_by
+entity_type: node
+bundle: grocery
+label: 'Sold by'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
